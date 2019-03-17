@@ -1,0 +1,20 @@
+@import 'var';
+@import 'reset';
+@import 'preload';
+body{
+  color:white;
+  overflow-x: hidden;
+}
+.wrapper__bg{
+  font-family: 'Playfair Display', serif;
+  min-height:100vh;
+  height:100%;
+  background-size: cover;
+  background: url("../img/bg.png") no-repeat fixed top;
+  overflow: hidden;
+}
+@import 'header';
+@import 'main';
+@import 'modals';
+@import 'media';
+

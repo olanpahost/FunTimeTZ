@@ -1,0 +1,68 @@
+.modal{
+  margin:0 -10px;
+}
+.h2.modal-title{
+  @include fontPlay(13, black);
+  color:$gold;
+  text-transform: uppercase;
+  margin:0;
+}
+.modal-header{
+  justify-content: center;
+  flex-direction: column-reverse;
+  padding:0 0 0 15px;
+  margin: 0 0 16px 0;
+  button.close{
+    margin:0;
+    align-self: center;
+    padding:14px;
+    opacity:1;
+    span{
+      color:$text-color;
+    }
+  }
+}
+.modal-content{
+  background-color:$header-top;
+  border:none;
+
+  &>*{
+  border-bottom: none;
+  border-top: none;
+  }
+  .main__pannel-button{
+    font-size: 13px;
+    width:100%;
+    &.search {
+      border-radius: 0;
+      border: none;
+      background-color: $searchbutton;
+    }
+    i{
+      color:inherit;
+      margin-left:10px;
+    }
+  }
+}
+.modal-dialog{
+  margin:0;
+  max-width: 100%;
+  background-color:$header-top;
+}
+.modal-body{
+  font:12px 'Merriweather', serif;
+  font-style: normal;
+  select{
+    margin:11px 0;
+  }
+  .yachnames-choice{
+    display:block;
+    margin:13px 0 0;
+    text-transform: uppercase;
+    color:$text-color;
+    @include fontMerri(12, 400);
+    &:last-of-type{
+      margin-bottom: 46px;
+    }
+  }
+}

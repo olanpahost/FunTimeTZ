@@ -1,0 +1,44 @@
+.main__wrapper-text.d-flex.flex-column.justify-content-begin.align-items-center
+        h1.h1 Luxury crewed catamaran fllet
+        .main__decor
+            img.line(src="img/zigzag.png" alt="anchor" title="")
+            i.fas.fa-anchor
+            img.line(src="img/zigzag.png" alt="anchor" title="")
+            .line
+        h3.h3.text__color-grey
+            |Yacht charter and yacht investments in Spain.
+            |Luxury crewed and bareboat catamarans. Charter in Spain. Lagoon catamarans.
+            |Bali catamarans. Monofleet More 55 ft.
+        .button.button-details Details
+        form.main__pannel.justify-content-around.d-none.d-lg-flex
+            select(href="#").button.main__pannel-button
+                option(selected disabled) Yacht name
+                option Yacht name1
+                option Yacht name2
+                option Yacht name3
+                option Yacht name4
+            .main__pannel-range
+                .main__pannel-range-info
+                    .main__pannel-range-currency#rangeCurrency
+                        span Price &nbsp;
+                        a#pound(href="#") &pound;/&nbsp;
+                        a#euro(href="#") &euro;/&nbsp;
+                        a#dollar(href="#") &dollar;
+                    .main__pannel-range-digital
+                        input#rangeDigital(type="text")
+                #slider-range
+            button.button.main__pannel-button#search
+                span Search
+                i.fas.fa-search
+            a(href="#").button.main__pannel-button.search-list
+                span Detailed Search
+        include pannel
+
+
+
+
+
+
+
+
+

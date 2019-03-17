@@ -1,0 +1,179 @@
+@import "slider-range";
+@import "selectYoucht";
+
+.h1 {
+  @include fontPlay(50, bold);
+  text-transform: uppercase;
+  text-align: center;
+  display: none;
+}
+
+.h3 {
+  @include fontMerri(20, 400);
+  font-style: italic;
+  line-height: 2em;
+  text-align: center;
+  width:80%;
+  max-width: 700px;
+  display: none;
+}
+
+.fa-anchor {
+  color: $gold;
+}
+
+.main__decor {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 6px;
+  margin: 16px 5px;
+  * {
+    margin: 0 5px;
+  }
+}
+
+.text__color-grey {
+  color: $text-color;
+}
+
+.main__wrapper-text {
+  min-height: calc(100vh - 140px);
+  .h1, .h3, .button, .main__pannel {
+    margin: 37px auto;
+  }
+}
+
+.button-details {
+  color: white;
+  @include fontPlay(13, 900);
+  background: $button-details;
+  width: 257px;
+  height: 47px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 2px;
+}
+
+.main__pannel {
+  height: 100px;
+  max-width: 1001px;
+  padding: 0 24px;
+  background: $pannel;
+  display: flex;
+  align-items: center;
+  & > * {
+    margin: 0 10px;
+  }
+}
+
+.main__pannel-button {
+  width: 242px;
+  height: 42px;
+  border: 1px solid $pannel-border;
+  background-color: transparent;
+  color: $text-color;
+  text-align: center;
+  padding: 0 14px;
+  @include fontPlay(13px, 400);
+  text-transform: uppercase;
+  &.search-list {
+    border: none;
+  }
+  #slider-range {
+    width: 200px;
+    display: block;
+  }
+
+}
+
+.search-list {
+  padding: 10px;
+  span {
+    position: relative;
+  }
+  & span:after {
+    position: absolute;
+    content: '\f107';
+    font-family: "Font Awesome 5 Free";
+    font-weight: 700;
+    color: $gold;
+    right: -20px;
+  }
+}
+
+#search {
+  cursor: pointer;
+  max-width: 136px;
+  text-align: center;
+  padding: 0 10px;
+
+  span {
+    margin-right: 5px;
+  }
+  i {
+    display: inline;
+    color: $gold;
+    margin: 0;
+  }
+}
+
+.main__pannel-range {
+  diplay: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main__pannel-range-info {
+  height: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color:$text-color;
+  text-transform: uppercase;
+  input{
+    background: none;
+    border:none;
+    text-align: end;
+    width: 120px;
+    color:$text-color;
+    position: relative;
+  }
+
+}
+
+.main__pannel-grey-button {
+  border: none;
+  background: $pannel-grey-button;
+  width: 280px;
+  height: 44px;
+}
+
+.footer {
+  position: relative;
+  bottom: 40px;
+  display: block;
+  text-align: center;
+  width: 100%;
+}
+
+.button-scroll {
+  position: relative;
+  background: none;
+  color: white;
+  margin-bottom: 40px;
+  @include fontMerri(13, 400);
+  font-style: italic;
+  i{
+    position: absolute;
+    top:10%;
+    animation: heightChange 1s ;
+    &.animate{
+      animation: heightChange 1s linear 5s;
+    }
+  }
+}

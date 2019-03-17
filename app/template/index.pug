@@ -1,0 +1,29 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        title FunTime TZ
+        link(rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css")
+        link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous")
+        link(rel="stylesheet" href="libs/bootstrap/bootstrap.min.css")
+        link(href="https://fonts.googleapis.com/css?family=Merriweather:400, 400i|Playfair+Display:400,700,900" rel="stylesheet")
+        link(rel="stylesheet" href="css/style.css")
+    body
+        .wrapper__bg
+            #preloading
+                .preload__bg
+                    .preload__logo
+            include header
+            .container
+                include main
+            .footer.container-fluid
+               a(href="#").button.button-scroll
+                    span Scroll Down &nbsp;
+                    i.fas.fa-long-arrow-alt-down
+
+        script(src="libs/jquery-3.1.1.min.js")
+        script(src="https://code.jquery.com/ui/1.12.1/jquery-ui.js")
+        script(src="libs/bootstrap/bootstrap.min.js")
+        script(src="js/script.js")
+

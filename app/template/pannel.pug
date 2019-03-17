@@ -1,0 +1,37 @@
+.main__pannel.d-flex.justify-content-around.d-lg-none
+    button.button.main__pannel-grey-button(type="button" data-toggle="modal" data-target="#yachtsearch") Yacht Search
+    button.button.main__pannel-grey-button(type="button" data-toggle="modal" data-target="#yachtname") Yacht Name
+    .modal.fade#yachtsearch(tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true")
+        .modal-dialog.modal-dialog-top(role="document")
+            .modal-content.container-fluid
+                .modal-header
+                    h2.h2.modal-title Yacht search
+                    button(type="button" class="close" data-dismiss="modal" aria-label="Close")
+                        span(aria-hidden="true") &times;
+                .modal-body
+                    form.justify-content-around
+                    - var yachtsearch = ['euro( € )', 'type (any)', 'light (any)', 'price (any)', 'builder (any)'];
+                    - var yachtname = ['acronis', "ae cap d’antibes", 'afterglow', 'alessandra','alucia', 'amadeus','andrea cay','andros','antara','aphrodite a','areti','artpolars','asia'];
+                        select.main__pannel-button
+                            option(selected disabled) Yacht name
+                            option Yacht name1
+                    each val in yachtsearch
+                        select.main__pannel-button
+                            option=  val
+
+                .modal-footer
+                    button.btn(type="button" data-dismiss="modal").button.main__pannel-button.search
+                        span Search
+                        i.fas.fa-search
+    .modal.fade#yachtname(tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true")
+        .modal-dialog.modal-dialog-top(role="document")
+            .modal-content.container
+                .modal-header
+                    h2.h2.modal-title Yacht name
+                    button(type="button" class="close" data-dismiss="modal" aria-label="Close")
+                        span(aria-hidden="true") &times;
+                .modal-body
+                    form.justify-content-around
+                    each val in yachtname
+                        a.yachnames-choice(href='#')=  val
+                        br

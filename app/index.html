@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FunTime TZ</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="libs/bootstrap/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400, 400i|Playfair+Display:400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div class="wrapper__bg">
+      <div id="preloading">
+        <div class="preload__bg">
+          <div class="preload__logo"></div>
+        </div>
+      </div>
+      <header id="header">
+        <div id="header__top">
+          <nav class="navbar navbar-expand-lg">
+            <div class="container">
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+              <div class="collapse navbar-collapse navbarToggler">
+                <div class="navbar-nav mr-auto d-lg-flex justify-content-begin">
+                  <div class="nav-item header__top__block"><a class="nav-link active" href="#"><i class="fa fa-mobile" aria-hidden="true"></i><span class="header__top-text">+3(063)542-23-40</span></a></div>
+                  <div class="nav-item header__top__block"><a class="nav-link" href="#"><i class="fa fa-envelope" aria-hidden="true"></i><span class="header__top-text">yachtmarine@gmail.com</span></a></div>
+                </div>
+                <div class="navbar-nav mr-auto d-lg-flex justify-content-end pr-5">
+                  <div class="nav-item header__top__block d-flex justify-content-lg-between justify-content-center align-items-center"><a href="#"><i class="fab fa-facebook-square"></i></a><a href="#"><i class="fab fa-twitter-square"></i></a><a href="#"><i class="fab fa-youtube" aria-hidden="true"></i></a></div>
+                  <div class="nav-item header__top__block"><a href="#"><i class="fas fa-key"></i><span class="header__top-text">Login</span></a></div>
+                  <div class="nav-item header__top__block"><a href="#">
+                      <ul class="language-choice">
+                        <li class="language__choice-item active"><a class="header__top-text language-choice__En" href="#">En</a></li>
+                        <li class="language__choice-item"><a class="header__top-text language-choice__De" href="#">De</a></li>
+                        <li class="language__choice-item"><a class="header__top-text language-choice__Fr" href="#">Fr</a></li>
+                        <li class="language__choice-item"><a class="header__top-text language-choice__It" href="#">It</a></li>
+                      </ul></a></div>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+        <div id="header__nav">
+          <nav class="navbar navbar-expand-lg">
+            <div class="container">
+              <div class="collapse navbar-collapse navbarToggler">
+                <div class="navbar-nav mr-auto d-lg-flex justify-content-begin"><a class="nav-item active header__bottom__block" href="#">Home</a><a class="nav-item header__bottom__block" href="#">our fleet</a><a class="nav-item header__bottom__block" href="#">Drivers</a><a class="nav-item header__bottom__block" href="#">location</a></div>
+                <div class="navbar-nav mr-auto d-lg-flex justify-content-end"><a class="nav-item header__bottom__block" href="#">About</a><a class="nav-item header__bottom__block" href="#">testimonals</a><a class="nav-item header__bottom__block" href="#">news</a><a class="nav-item header__bottom__block" href="#">contact</a></div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <div class="container">
+        <div class="main__wrapper-text d-flex flex-column justify-content-begin align-items-center">
+          <h1 class="h1">Luxury crewed catamaran fllet</h1>
+          <div class="main__decor"><img class="line" src="img/zigzag.png" alt="anchor" title=""><i class="fas fa-anchor"></i><img class="line" src="img/zigzag.png" alt="anchor" title="">
+            <div class="line"></div>
+          </div>
+          <h3 class="h3 text__color-grey">
+            Yacht charter and yacht investments in Spain.
+            Luxury crewed and bareboat catamarans. Charter in Spain. Lagoon catamarans.
+            Bali catamarans. Monofleet More 55 ft.
+          </h3>
+          <div class="button button-details">Details</div>
+          <form class="main__pannel justify-content-around d-none d-lg-flex">
+            <select class="button main__pannel-button" href="#">
+              <option selected disabled>Yacht name</option>
+              <option>Yacht name1</option>
+              <option>Yacht name2</option>
+              <option>Yacht name3</option>
+              <option>Yacht name4</option>
+            </select>
+            <div class="main__pannel-range">
+              <div class="main__pannel-range-info">
+                <div class="main__pannel-range-currency" id="rangeCurrency"><span>Price &nbsp;</span><a id="pound" href="#">&pound;/&nbsp;</a><a id="euro" href="#">&euro;/&nbsp;</a><a id="dollar" href="#">&dollar;</a></div>
+                <div class="main__pannel-range-digital">
+                  <input id="rangeDigital" type="text">
+                </div>
+              </div>
+              <div id="slider-range"></div>
+            </div>
+            <button class="button main__pannel-button" id="search"><span>Search</span><i class="fas fa-search"></i></button><a class="button main__pannel-button search-list" href="#"><span>Detailed Search</span></a>
+          </form>
+          <div class="main__pannel d-flex justify-content-around d-lg-none">
+            <button class="button main__pannel-grey-button" type="button" data-toggle="modal" data-target="#yachtsearch">Yacht Search</button>
+            <button class="button main__pannel-grey-button" type="button" data-toggle="modal" data-target="#yachtname">Yacht Name</button>
+            <div class="modal fade" id="yachtsearch" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-top" role="document">
+                <div class="modal-content container-fluid">
+                  <div class="modal-header">
+                    <h2 class="h2 modal-title">Yacht search</h2>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  </div>
+                  <div class="modal-body">
+                    <form class="justify-content-around"></form>
+                    <select class="main__pannel-button">
+                      <option selected disabled>Yacht name</option>
+                      <option>Yacht name1</option>
+                    </select>
+                    <select class="main__pannel-button">
+                      <option>euro( € )</option>
+                    </select>
+                    <select class="main__pannel-button">
+                      <option>type (any)</option>
+                    </select>
+                    <select class="main__pannel-button">
+                      <option>light (any)</option>
+                    </select>
+                    <select class="main__pannel-button">
+                      <option>price (any)</option>
+                    </select>
+                    <select class="main__pannel-button">
+                      <option>builder (any)</option>
+                    </select>
+                  </div>
+                  <div class="modal-footer">
+                    <button class="btn button main__pannel-button search" type="button" data-dismiss="modal"><span>Search</span><i class="fas fa-search"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal fade" id="yachtname" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-top" role="document">
+                <div class="modal-content container">
+                  <div class="modal-header">
+                    <h2 class="h2 modal-title">Yacht name</h2>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  </div>
+                  <div class="modal-body">
+                    <form class="justify-content-around"></form><a class="yachnames-choice" href="#">acronis</a><br><a class="yachnames-choice" href="#">ae cap d’antibes</a><br><a class="yachnames-choice" href="#">afterglow</a><br><a class="yachnames-choice" href="#">alessandra</a><br><a class="yachnames-choice" href="#">alucia</a><br><a class="yachnames-choice" href="#">amadeus</a><br><a class="yachnames-choice" href="#">andrea cay</a><br><a class="yachnames-choice" href="#">andros</a><br><a class="yachnames-choice" href="#">antara</a><br><a class="yachnames-choice" href="#">aphrodite a</a><br><a class="yachnames-choice" href="#">areti</a><br><a class="yachnames-choice" href="#">artpolars</a><br><a class="yachnames-choice" href="#">asia</a><br>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer container-fluid"><a class="button button-scroll" href="#"><span>Scroll Down &nbsp;</span><i class="fas fa-long-arrow-alt-down"></i></a></div>
+    </div>
+    <script src="libs/jquery-3.1.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="libs/bootstrap/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

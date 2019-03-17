@@ -1,0 +1,13 @@
+#header__nav{
+  position:relative;
+  .header__bottom__block{
+    height:37.5px;
+    padding:15px 24px;
+    box-sizing: content-box;
+    @include fontPlay(12, bold);
+    display:flex;
+    justify-content: center;
+    text-transform: uppercase;
+
+  }
+}

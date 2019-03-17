@@ -1,0 +1,30 @@
+$text-color:#bdc1c7;
+$dark-blue:#2f3e54;
+$header-bottom:rgba(20, 27, 37, 0.34);
+$header-top:#2d3b50;
+$grey-bar:#515e70;
+$searchbutton: #3f4752;
+$gold:#ad884f;
+$pannel:rgba(47, 62, 84,0.7);
+$pannel-border:rgba(255, 255, 255,0.1);
+$pannel-grey-button:rgba(243, 201, 133,0.1);
+$button-details:#cda463;
+
+@mixin fontPlay($fontSize,$fontType) {
+  font:$fontSize + px 'Playfair Display', serif;
+  font-weight: $fontType;
+}
+@mixin fontMerri($fontSize,$fontstyle) {
+  font:$fontSize + px 'Merriweather', serif;
+  font-style: $fontstyle;
+}
+@keyframes widthChange {
+    0%{width:0}
+    100%{width:100%}
+  }
+@keyframes heightChange {
+  0%{top:-50%}
+  25%{top:50%}
+  50%{top:-50%}
+  100%{top:10%}
+}

@@ -1,0 +1,29 @@
+select{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image:
+          linear-gradient(45deg, transparent 50%, $gold 50%),
+          linear-gradient(135deg, $gold 50%, transparent 50%),
+          radial-gradient(transparent 70%, transparent 72%);
+  background-position:
+          calc(100% - 20px) calc(1em + 2px),
+          calc(100% - 15px) calc(1em + 2px),
+          calc(100% - .5em) .5em;
+  background-size:
+          5px 5px,
+          5px 5px,
+          1.5em 1.5em;
+  background-repeat: no-repeat;
+}
+select:focus{
+  background: $header-top;
+
+  option:not([disabled]){
+   color:$text-color;
+  }
+  option[disabled]{
+    color:$gold;
+    font-weight: bold;
+    background-color: $header-top;
+  }
+}

@@ -1,0 +1,35 @@
+.ui-widget.ui-widget-content {
+  width: 340px;
+}
+
+.ui-slider-horizontal {
+  height: 1px;
+  top: -5px;
+}
+
+.ui-slider .ui-slider-handle {
+  width: 28px;
+  height: 11px;
+  top: -5px;
+  border-radius: 0;
+  background: url("../img/slider-bars.png") no-repeat center;
+  background-size: 100% 100%;
+}
+.ui-widget.ui-widget-content{
+  border:none;
+}
+.ui-widget.ui-widget-content{
+background-color: rgb(68, 79, 96);
+}
+.ui-slider-range.ui-corner-all.ui-widget-header{
+  background-color: $gold;
+}
+.Rectangle_10_copy {
+  background-color: rgb(68, 79, 96);
+  position: absolute;
+  left: 2174px;
+  top: 784px;
+  width: 341px;
+  height: 1px;
+  z-index: 131;
+}
